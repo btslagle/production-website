@@ -1,0 +1,42 @@
+body {
+    background-image: url(https://wallpaperaccess.com/full/3879231.jpg);
+    background-size: 100%;
+    margin: 0;
+}
+
+header {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+header>h1 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+main>h2 {
+    color: white;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+nav>ul>li>a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin: 4px;
+}
