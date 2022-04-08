@@ -1,7 +1,8 @@
 body {
-    background-image: url(https://wallpaperaccess.com/full/3879231.jpg);
-    background-size: 100%;
+    /*  background-image: url(https://wallpaperaccess.com/full/3879231.jpg);
+    background-size: 100%;*/
     margin: 0;
+    color: black;
 }
 
 header {
@@ -39,4 +40,10 @@ ul {
     list-style-type: none;
     justify-content: space-evenly;
     margin: 4px;
+}
+
+div {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
 }

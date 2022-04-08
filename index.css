@@ -1,8 +1,8 @@
 body {
     background-color: hsl (0, 0%, 0);
-    background-image: url(https://wallpaperaccess.com/full/369002.jpg);
-    background-size: 100%;
-    display: flex;
+    /*background-image: url(https://wallpaperaccess.com/full/369002.jpg);
+    background-size: 100%;*/
+    display: grid;
     margin: 0;
 }
 
@@ -11,6 +11,7 @@ header {
     justify-content: flex-start;
     background-color: black;
     margin-bottom: 10 px;
+    padding: 0;
 }
 
 header>h1 {
@@ -30,12 +31,14 @@ nav>ul>li>a {
     text-decoration: none;
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 
 ul {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
+    padding: 0;
 }
 
 label,
