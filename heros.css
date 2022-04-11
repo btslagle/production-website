@@ -1,8 +1,10 @@
 body {
-    /*  background-image: url(https://wallpaperaccess.com/full/3879231.jpg);
-    background-size: 100%;*/
+    background-color: blue;
     margin: 0;
-    color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: auto;
 }
 
 header {
@@ -43,7 +45,18 @@ ul {
 }
 
 div {
-    display: flex;
+    display: grid;
     font-size: 12px;
-    justify-content: center;
+    flex-flow: wrap row;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+p+p {
+    text-transform: uppercase;
 }
