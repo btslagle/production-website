@@ -41,42 +41,12 @@ ul {
     padding: 0;
 }
 
-label,
-input {
-    display: flex;
+h2 {
+    color: black;
     justify-content: center;
-    align-self: center;
-    align-items: center;
-    color: red;
-    background-color: grey;
-    width: 100px;
-}
-
-input {
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 8px;
-}
-
-button {
-    border: none;
-    background-color: hsl(0, 90%, 48%);
-    color: #fff;
-    font-weight: 700;
-    font-size: 8px;
-    box-shadow: 1px 1px 3px hsl(0, 0%, 50%);
-    margin: 0 auto;
-    display: block;
-    width: 100px;
-}
-
-main>h2 {
-    color: white;
     text-align: center;
 }
 
-footer {
-    display: block;
+form {
     text-align: center;
 }

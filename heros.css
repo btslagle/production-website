@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body {
-    background-color: grey;
+    background-color: black;
     margin: 0;
     color: white;
     display: grid;
@@ -11,6 +11,8 @@ header {
     flex-direction: row-reverse;
     justify-content: flex-start;
     background-color: black;
+    margin-top: 30px;
+    color: yellow;
 }
 
 header>h1 {
@@ -19,6 +21,8 @@ header>h1 {
     justify-content: center;
     margin: 0;
     font-size: 20px;
+    margin-bottom: 20px;
+    color: yellow;
 }
 
 main>h2 {
@@ -35,6 +39,7 @@ nav>ul>li>a {
     text-decoration: none;
     display: flex;
     flex-direction: row;
+    color: yellow;
 }
 
 ul {
@@ -79,4 +84,8 @@ img {
 
 .hero {
     background-color: blue;
+}
+
+.hidden {
+    display: none;
 }
