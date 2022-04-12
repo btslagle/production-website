@@ -1,12 +1,15 @@
 const houses = document.querySelector(".houses")
 const main = document.querySelector("main")
 
+
+
+
 const url = ("https://akabab.github.io/superhero-api/api/all.json")
 fetch(url).then(response => {
     return response.json()
 }).then(paresedResponse => {
     const superHeros = paresedResponse.map(hero => hero)
-    console.log(superHeros)
+
     superHeros.forEach(hero => {
         const $heros = document.createElement("div")
         $heros.classList.add("hero")
@@ -18,5 +21,14 @@ fetch(url).then(response => {
             
             `
         main.append($heros)
+
+        if (hero.biography.alignment === "bad") {
+            $heros.classList.replace("hero", "villian")
+
+
+        }
+
     });
+
+
 });
