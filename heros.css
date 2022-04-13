@@ -13,6 +13,7 @@ header {
     background-color: black;
     margin-top: 30px;
     color: yellow;
+    margin-bottom: 30px;
 }
 
 header>h1 {

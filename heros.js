@@ -14,10 +14,6 @@ fetch(url).then(response => {
         const $heros = document.createElement("div")
         if (hero.biography.alignment === "good") {
             $heros.classList.add("hero")
-
-
-
-
             $heros.innerHTML = `
             <h2>${hero.name}</h2>
             <img src="${hero.images.sm}" alt "Image of ${hero.name}" />
