@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 body {
     background-color: black;
     margin: 0;
@@ -81,6 +82,8 @@ img {
 .villian {
     color: black;
     background-color: red;
+    font-family: 'Rubik Wet Paint', cursive;
+    ;
 }
 
 .hero {
