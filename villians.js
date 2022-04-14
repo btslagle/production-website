@@ -4,20 +4,23 @@ const url = ("https://akabab.github.io/superhero-api/api/all.json")
 fetch(url).then(response => {
     return response.json()
 }).then(paresedResponse => {
-    const superHeros = paresedResponse.map(hero => hero)
-    console.log(superHeros)
-    superHeros.forEach(hero => {
-        const $heros = document.createElement("div")
-        if (hero.biography.alignment === "bad") {
-            $heros.classList.add("villian")
-            $heros.innerHTML = `
-            <h2>${hero.name}</h2>
-            <img src="${hero.images.sm}" alt "Image of ${hero.name}" />
-            <p>${hero.name} is know for working with ${hero.connections.groupAffiliation}</p>
-            <p> Alignment: ${hero.biography.alignment}</p>
+    const villians = paresedResponse.map(villian => villian)
+    villians.forEach(villian => {
+        const $villians = document.createElement("div")
+        if (villian.biography.alignment === "bad") {
+            $villians.classList.add("villian")
+            $villians.innerHTML = `
+            <h2>${villian.name}</h2>
+            <img src="${villian.images.sm}" alt "Image of ${villian.name}" />
+            <p>${villian.name} is know for working with ${villian.connections.groupAffiliation}</p>
+            <p> Alignment: ${villian.biography.alignment}</p>
             
             `
-            main.append($heros)
+            main.append($villians)
         }
-    })
-})
+    }).catch(redirect)
+});
+
+function redirect() {
+    window.location.href = "404.html"
+}

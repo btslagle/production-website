@@ -86,6 +86,10 @@ img {
     ;
 }
 
+ul li:last-child {
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
 .hero {
     background-color: blue;
 }

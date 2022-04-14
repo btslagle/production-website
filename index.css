@@ -10,7 +10,7 @@ body {
 
 header {
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: black;
     margin-top: 30px;
     color: yellow;
@@ -27,11 +27,39 @@ header>h1 {
     color: yellow;
 }
 
-main>h2 {
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
     color: white;
-    text-align: center;
+    justify-content: center;
 }
 
 form {
-    text-align: center;
+    justify-content: center;
+}
+
+ul li:last-child {
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+h2 {
+    justify-content: center;
+}
+
+nav>ul>li>a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: yellow;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin: 4px;
 }
