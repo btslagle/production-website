@@ -50,7 +50,6 @@ ul {
     justify-content: space-evenly;
     margin: 4px;
 }
-
 div {
     display: grid;
     font-size: 12px;
@@ -60,6 +59,7 @@ div {
     margin-right: 40px;
     text-align: center;
     margin-top: 25px;
+
 }
 
 main {
@@ -69,9 +69,29 @@ main {
     justify-content: center;
 }
 
+@media (max-width: 800px) {
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+
 p+p {
     text-transform: uppercase;
     text-align: center;
+}
+@media (max-width: 800px) {
+    img {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 img {
@@ -86,14 +106,36 @@ img {
     ;
 }
 
+ul li:first-child a:hover {
+    color:white;
+}
+li + li a:hover {
+    color:blue;
+}
+
 ul li:last-child {
     font-family: 'Rubik Wet Paint', cursive;
 }
+ul li:last-child  a:hover {
+color:red;
+}
+
+
 
 .hero {
     background-color: blue;
+    
 }
 
 .hidden {
     display: none;
+}
+m
+.errrorMessage {
+    display:flex;
+    justify-content: center;
+
+}
+.errorMessage p {
+    font-size:  35px;
 }
