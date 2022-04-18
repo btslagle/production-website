@@ -12,6 +12,7 @@ fetch(url).then(response => {
             $heros.innerHTML = `
             <h2>${hero.name}</h2>
             <img src="${hero.images.sm}" alt "Image of ${hero.name}" />
+            <a href="details.html?id=${hero.id}">${hero.name}</a>
             <p>${hero.name} is know for working with ${hero.connections.groupAffiliation}</p>
             <p> Alignment: ${hero.biography.alignment}</p>
             
