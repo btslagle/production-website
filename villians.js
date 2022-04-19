@@ -15,13 +15,10 @@ fetch(url).then(response => {
             <a href="details.html?id=${villian.id}">${villian.name}</a>
             <p>${villian.name} is know for working with ${villian.connections.groupAffiliation}</p>
             <p> Alignment: ${villian.biography.alignment}</p>
-            
             `
             main.append($villians)
         }
-    }).catch(redirect)
+    }).catch(error => {
+        window.location.href = "404.html"
+    })
 });
-
-function redirect() {
-    window.location.href = "404.html"
-}

@@ -1,6 +1,6 @@
 const $form = document.querySelector("form")
-const $input = document.querySelector("#search")
-const $submit = document.querySelector(".submit")
+const $input = document.querySelector("#search").value
+const $submit = document.querySelector("#submit")
 const $main = document.querySelector("main")
 
 
@@ -13,7 +13,7 @@ function getFavoriteSuper(heroOrVillian) {
 
 
 
-$form.addEventListener("submit", (event) => {
+$input.addEventListener("submit", (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const favoriteSuper = formData.get("favorite-super")

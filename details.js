@@ -5,7 +5,7 @@ function superDetails(hero) {
 
 
     $div.innerHTML = `
-        <h2>${hero.name}</h2>
+        <h2 class= "name" >${hero.name}</h2>
         <img src="${hero.images.md}">
         <ul class ="biography">
         <li>Full Name: ${hero.biography.fullName}</li>
@@ -13,6 +13,7 @@ function superDetails(hero) {
         <li>Aliases: ${hero.biography.aliases}</li>
         <li>First Apperance: ${hero.biography.firstApperance}</li>
         <li>Alignment: ${hero.biography.alignment}</li>
+        <li>Origin: ${hero.biography.placeofBirth}</li>
         </ul>
         <br>
         <ul class= "power">
