@@ -1,7 +1,7 @@
 const $form = document.querySelector("form")
 const $input = document.querySelector("#search")
 const $submit = document.querySelector(".submit")
-const $main = document.queryse
+const $main = document.querySelector("main")
 
 
 function getFavoriteSuper(heroOrVillian) {

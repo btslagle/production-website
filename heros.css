@@ -22,7 +22,7 @@ header>h1 {
     color: white;
     justify-content: center;
     margin: 0;
-    font-size: 20px;
+    font-size: 50px;
     margin-bottom: 20px;
     color: yellow;
 }
@@ -32,16 +32,13 @@ main>h2 {
     text-align: center;
 }
 
-input {
-    text-align: center;
-}
-
 nav>ul>li>a {
     color: white;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     color: yellow;
+    font-size: 30px;
 }
 
 ul {
@@ -52,7 +49,7 @@ ul {
 }
 div {
     display: grid;
-    font-size: 12px;
+    font-size: 16px;
     flex-flow: wrap row;
     align-content: center;
     margin-left: 40px;
@@ -120,12 +117,19 @@ ul li:last-child  a:hover {
 color:red;
 }
 
+div a {
+    color:silver;
+}
 
+div a:hover {
+    color:yellow;
+}
 
 .hero {
     background-color: blue;
     
 }
+
 
 .hidden {
     display: none;

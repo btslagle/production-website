@@ -3,6 +3,7 @@ $main = document.querySelector("main")
 function superDetails(hero) {
     const $div = document.createElement("div")
 
+
     $div.innerHTML = `
         <h2>${hero.name}</h2>
         <img src="${hero.images.md}">
@@ -20,11 +21,17 @@ function superDetails(hero) {
         <li>Speed: ${hero.powerstats.speed}</li>
         <li>Durability: ${hero.powerstats.durability}</li>
         <li>Power: ${hero.powerstats.power}</li>
-        <li>Combaat${hero.powerstats.combat}</li>
+        <li>Combat: ${hero.powerstats.combat}</li>
         </ul>
 
 
     `
+    if (hero.biography.alignment === "good") {
+        $div.classList.add("hero")
+    }
+    if (hero.biography.alignment === "bad") {
+        $div.classList.add("villian")
+    }
     $main.append($div)
 }
 
