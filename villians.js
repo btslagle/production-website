@@ -12,7 +12,7 @@ fetch(url).then(response => {
             $villians.innerHTML = `
             <h2>${villian.name}</h2>
             <img src="${villian.images.sm}" alt "Image of ${villian.name}" />
-            <a href="details.html?id=${villian.id}">${villian.name}</a>
+            <a class = "black" href="details.html?id=${villian.id}">${villian.name}</a>
             <p>${villian.name} is know for working with ${villian.connections.groupAffiliation}</p>
             <p> Alignment: ${villian.biography.alignment}</p>
             `
