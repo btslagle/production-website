@@ -26,12 +26,14 @@ header>h1 {
     margin-bottom: 20px;
     color: yellow;
 }
+
 @media (max-width: 800px) {
     header {
         display: flex;
         flex-flow: column nowrap;
     }
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -41,41 +43,45 @@ main {
     text-align: center;
     align-items: center;
 }
+
 @media (max-width: 800px) {
     main {
         display: flex;
         flex-flow: column nowrap;
     }
 }
+
 h2 {
     color: white;
     margin-bottom: 45px;
     align-self: center;
-
 }
+
 @media (max-width: 800px) {
     img {
         display: flex;
         justify-content: center;
     }
 }
+
 form {
-        align-self: center;
+    align-self: center;
 }
 
 ul li:first-child a:hover {
-    color:white;
+    color: white;
 }
 
-li + li a:hover {
-    color:blue;
+li+li a:hover {
+    color: blue;
 }
 
 ul li:last-child {
     font-family: 'Rubik Wet Paint', cursive;
 }
-ul li:last-child  a:hover {
-color:red;
+
+ul li:last-child a:hover {
+    color: red;
 }
 
 h2 {
@@ -96,4 +102,8 @@ ul {
     list-style-type: none;
     justify-content: space-evenly;
     margin: 4px;
+}
+
+.favorite {
+    color: white;
 }
