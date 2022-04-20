@@ -25,7 +25,6 @@ function getFavoriteSuper(favoriteSuper) {
             if (favSuper.biography.alignment === "bad") {
                 div.classList.add("villian")
             }
-
             div.innerHTML = ` 
                 <h2> Your favorite Super is ${favSuper.name}! </h2>
                 <img src = ${favSuper.images.md} alt = ${favSuper.name} />
@@ -47,7 +46,6 @@ function getFavoriteSuper(favoriteSuper) {
                 <li>Combat: ${favSuper.powerstats.combat}</li>
                 </ul>
                 `
-
             $main.append(div)
         }).catch(error => {
             window.location.href = "404.html"

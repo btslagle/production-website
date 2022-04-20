@@ -2,8 +2,6 @@ $main = document.querySelector("main")
 
 function superDetails(hero) {
     const $div = document.createElement("div")
-
-
     $div.innerHTML = `
         <h2 class= "name" >${hero.name}</h2>
         <img src="${hero.images.md}">
@@ -24,9 +22,7 @@ function superDetails(hero) {
         <li>Power: ${hero.powerstats.power}</li>
         <li>Combat: ${hero.powerstats.combat}</li>
         </ul>
-
-
-    `
+        `
     if (hero.biography.alignment === "good") {
         $div.classList.add("hero")
     }
@@ -36,11 +32,12 @@ function superDetails(hero) {
     $main.append($div)
 }
 
-
 const queryString = new URLSearchParams(window.location.search)
 fetch(`https://akabab.github.io/superhero-api/api/id/${queryString.get("id")}.json`)
     .then((response) => response.json())
     .then((parsedResponse) => {
         const details = parsedResponse
         superDetails(details)
+    }).catch(error => {
+        window.location.href = "404.html"
     })
