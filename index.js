@@ -19,10 +19,34 @@ function getFavoriteSuper(favoriteSuper) {
         .then(paresedResponse => {
             const favSuper = paresedResponse.map(response => response).find(response => response.name === `${favoriteSuper}`)
             const div = document.createElement("div")
-            div.classList.add("favorite")
-            div.innerHTML = ` <h2> Your favorite Super is ${favSuper.name}! </h2>
-            <img src = ${favSuper.images.md} alt = ${favSuper.name} />
-            `
+            if (favSuper.biography.alignment === "good") {
+                div.classList.add("hero")
+            }
+            if (favSuper.biography.alignment === "bad") {
+                div.classList.add("villian")
+            }
+
+            div.innerHTML = ` 
+                <h2> Your favorite Super is ${favSuper.name}! </h2>
+                <img src = ${favSuper.images.md} alt = ${favSuper.name} />
+                <ul class ="biography">
+                <li>Full Name: ${favSuper.biography.fullName}</li>
+                <li>Alter Egos: ${favSuper.biography.alterEgos}</li>
+                <li>Aliases: ${favSuper.biography.aliases}</li>
+                <li>First Apperance: ${favSuper.biography.firstApperance}</li>
+                <li>Alignment: ${favSuper.biography.alignment}</li>
+                <li>Origin: ${favSuper.biography.placeofBirth}</li>
+                </ul>
+                <br>
+                <ul class= "power">
+                <li>Intelligence: ${favSuper.powerstats.intelligence}</li>
+                <li>Strength: ${favSuper.powerstats.strength}</li>
+                <li>Speed: ${favSuper.powerstats.speed}</li>
+                <li>Durability: ${favSuper.powerstats.durability}</li>
+                <li>Power: ${favSuper.powerstats.power}</li>
+                <li>Combat: ${favSuper.powerstats.combat}</li>
+                </ul>
+                `
 
             $main.append(div)
         }).catch(error => {
