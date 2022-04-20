@@ -1,11 +1,14 @@
 const $form = document.querySelector("form")
 const $main = document.querySelector("main")
+const reset = document.querySelector("reset")
+
+
 
 
 $form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
-    const favoriteSuper = formData.get("favorite-super")
+    let formData = new FormData(event.target);
+    let favoriteSuper = formData.get("favorite-super")
     getFavoriteSuper(favoriteSuper);
 })
 
