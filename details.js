@@ -27,7 +27,7 @@ function superDetails(hero) {
         $div.classList.add("hero")
     }
     if (hero.biography.alignment === "bad") {
-        $div.classList.add("villian")
+        $div.classList.add("villain")
     }
     $main.append($div)
 }

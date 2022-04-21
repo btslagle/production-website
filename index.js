@@ -23,7 +23,7 @@ function getFavoriteSuper(favoriteSuper) {
                 div.classList.add("hero")
             }
             if (favSuper.biography.alignment === "bad") {
-                div.classList.add("villian")
+                div.classList.add("villain")
             }
             div.innerHTML = ` 
                 <h2> Your favorite Super is ${favSuper.name}! </h2>
