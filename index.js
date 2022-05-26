@@ -1,9 +1,7 @@
 const $form = document.querySelector("form")
 const $main = document.querySelector("main")
 const reset = document.querySelector("reset")
-
-
-
+const superChoice = document.querySelector(".super")
 
 $form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -11,7 +9,6 @@ $form.addEventListener("submit", (event) => {
     let favoriteSuper = formData.get("favorite-super")
     getFavoriteSuper(favoriteSuper);
 })
-
 
 function getFavoriteSuper(favoriteSuper) {
     fetch("https://akabab.github.io/superhero-api/api/all.json")
@@ -25,6 +22,7 @@ function getFavoriteSuper(favoriteSuper) {
             if (favSuper.biography.alignment === "bad") {
                 div.classList.add("villain")
             }
+            superChoice.innerHTML = ``
             div.innerHTML = ` 
                 <h2> Your favorite Super is ${favSuper.name}! </h2>
                 <img src = ${favSuper.images.md} alt = ${favSuper.name} />
@@ -46,7 +44,7 @@ function getFavoriteSuper(favoriteSuper) {
                 <li>Combat: ${favSuper.powerstats.combat}</li>
                 </ul>
                 `
-            $main.append(div)
+            superChoice.append(div)
         }).catch(error => {
             window.location.href = "404.html"
         })
